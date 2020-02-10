@@ -7,7 +7,7 @@ export class Game {
   private scoreboard: ResultPanel = new ResultPanel();
 
   constructor(public player: Player, public problemCount: number, public factor: number) {
-  }
+  }  
 
   displayGame(): void {
 
@@ -28,7 +28,7 @@ export class Game {
     // enable the calculate score button
     document.getElementById('calculate')!.removeAttribute('disabled');
   }
-
+  
   calculateScore(): void {
 
     let score: number = 0;
@@ -55,5 +55,5 @@ export class Game {
 
     // disable the calculate score button
     document.getElementById('calculate')!.setAttribute('disabled', 'true');
-  }
+  }  
 }

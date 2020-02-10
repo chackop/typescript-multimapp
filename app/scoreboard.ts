@@ -20,5 +20,5 @@ export class Scoreboard {
 
     const scoresElement: HTMLElement = document.getElementById('scores')!;
     scoresElement.innerHTML = output;
-  }
+  }  
 }
